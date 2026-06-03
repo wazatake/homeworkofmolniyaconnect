@@ -55,15 +55,24 @@ project-name/
 - `wazatake/-` — приватный JS
 - `wazatake/-1567` — приватный JS (для пуспика)
 
+## База знаний
+`wazatake/homeworkofmolniyaconnect` — главный репо-шаблон. Содержит:
+- этот `CLAUDE.md`
+- `.claude/skills/landing-builder/SKILL.md`
+- референсы, примеры, накопленные решения
+
+Каждый новый лендинг — **отдельный репо**. База знаний не трогается.
+
 ## Workflow для нового лендинга
 1. Получить задачу (название, суть, аудитория, тон)
 2. Определить визуальное направление — одним словом
-3. Создать репо через MCP github (если нового проекта)
-4. Scaffold Vite + React + Tailwind
-5. Собрать компоненты: Hero → Features/About → CTA → Footer
-6. Framer Motion: анимации входа, scroll-reveal, hover-эффекты
-7. Деплой через MCP vercel
-8. Сохранить решения в cavemem
+3. Через MCP github создать новый репо `wazatake/{name}-landing` (публичный)
+4. Скопировать папку `.claude/` из `homeworkofmolniyaconnect` в новый репо
+5. Scaffold Vite + React + Tailwind локально или в облачной сессии
+6. Собрать компоненты: Hero → Features/About → CTA → Footer
+7. Framer Motion: анимации входа, scroll-reveal, hover-эффекты
+8. Деплой через MCP vercel
+9. Сохранить решения в cavemem и добавить запись в `homeworkofmolniyaconnect/README.md`
 
 ## Запреты
 - Не предлагай plain HTML для новых проектов
