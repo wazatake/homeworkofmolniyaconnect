@@ -1,0 +1,126 @@
+.ctablock {
+  background: var(--accent);
+  padding: 80px 0;
+}
+
+.ctablock-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--px);
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+  align-items: center;
+}
+
+.ctablock-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.ctablock-title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.ctablock-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.ctablock-sub {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.65;
+  margin-bottom: 36px;
+  max-width: 500px;
+}
+
+.ctablock-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ctablock-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--ink);
+  border: none;
+  padding: 16px 36px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: opacity 0.2s;
+  align-self: flex-start;
+}
+.ctablock-btn:hover { opacity: 0.85; }
+
+.ctablock-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ctablock-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  transition: color 0.2s;
+}
+.ctablock-contact:hover { color: var(--gold); }
+
+.ctablock-contact-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.ctablock-aside {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 32px 28px;
+}
+
+.ctablock-promise {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ctablock-promise-item {
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  align-items: baseline;
+  line-height: 1.4;
+}
+
+.ctablock-promise-icon {
+  color: var(--gold);
+  font-family: var(--mono);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .ctablock-inner { grid-template-columns: 1fr; gap: 40px; }
+  .ctablock { padding: 56px 0; }
+}
+
+@media (max-width: 600px) {
+  .ctablock-btn { width: 100%; text-align: center; padding: 16px 20px; }
+}
