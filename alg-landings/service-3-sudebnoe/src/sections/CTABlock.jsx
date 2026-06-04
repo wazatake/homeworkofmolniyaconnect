@@ -19,13 +19,13 @@ export default function CTABlock({ onBook }) {
               Обсудить дело
             </button>
             <div className="ctablock-contacts">
-              <a className="ctablock-contact" href="tel:+74951234567">
+              <a className="ctablock-contact" href="tel:+79930778778">
                 <span className="ctablock-contact-label">Телефон</span>
-                <span>ЗАМЕНИТЬ_НА_РЕАЛЬНЫЙ_НОМЕР</span>
+                <span>8 993 077 87 78</span>
               </a>
-              <a className="ctablock-contact" href="mailto:info@alfalegroup.ru">
+              <a className="ctablock-contact" href="mailto:info@alfalegalgroup.ru">
                 <span className="ctablock-contact-label">Email</span>
-                <span>ЗАМЕНИТЬ_НА_РЕАЛЬНЫЙ_EMAIL</span>
+                <span>info@alfalegalgroup.ru</span>
               </a>
             </div>
           </div>
