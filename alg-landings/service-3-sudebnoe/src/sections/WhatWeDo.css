@@ -1,6 +1,8 @@
 .whatwedo {
-  background: var(--paper);
+  background: var(--bg-card);
   padding: 80px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .whatwedo-inner {
@@ -12,53 +14,59 @@
 .whatwedo-lead {
   font-size: 16px;
   color: var(--ink-mid);
-  font-style: italic;
-  font-family: var(--serif);
-  margin-bottom: 48px;
-  max-width: 600px;
+  margin-bottom: 40px;
+  max-width: 620px;
+  line-height: 1.65;
 }
 
 .whatwedo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-  border: 1px solid var(--border);
+  gap: 16px;
 }
 
 .whatwedo-block {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  border-bottom: 1px solid var(--border);
-  border-right: 1px solid var(--border);
-  transition: background 0.2s;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  gap: 0;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
-.whatwedo-block:nth-child(even) { border-right: none; }
-.whatwedo-block:nth-last-child(-n+2) { border-bottom: none; }
-.whatwedo-block:hover { background: var(--paper-warm); }
+.whatwedo-block:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
 
 .whatwedo-num {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 500;
   color: var(--gold);
-  padding: 26px 0 0 16px;
+  padding: 24px 0 0 16px;
   border-right: 1px solid var(--border);
   flex-shrink: 0;
+  width: 52px;
 }
 
 .whatwedo-content {
-  padding: 24px 24px 24px 20px;
+  padding: 22px 22px 22px 18px;
+  flex: 1;
 }
 
 .whatwedo-title {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   color: var(--ink);
   margin-bottom: 4px;
+  line-height: 1.35;
 }
 
 .whatwedo-sub {
   font-family: var(--mono);
   font-size: 10px;
+  font-weight: 500;
   color: var(--gold);
   letter-spacing: 0.06em;
   margin-bottom: 14px;
@@ -68,7 +76,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 6px;
 }
 
 .whatwedo-items li {
@@ -89,7 +97,5 @@
 
 @media (max-width: 768px) {
   .whatwedo-grid { grid-template-columns: 1fr; }
-  .whatwedo-block { border-right: none; border-bottom: 1px solid var(--border); }
-  .whatwedo-block:last-child { border-bottom: none; }
   .whatwedo { padding: 56px 0; }
 }

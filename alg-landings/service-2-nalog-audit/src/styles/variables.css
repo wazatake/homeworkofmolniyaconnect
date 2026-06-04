@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap');
-
 :root {
-  --ink: #1a1a18;
-  --ink-mid: #4a4a44;
-  --ink-light: #8a8a80;
-  --paper: #faf9f6;
-  --paper-warm: #f3f1eb;
-  --accent: #2a4a3e;
-  --accent-light: #e8f0ed;
-  --gold: #b08d57;
-  --gold-light: #f5eed8;
-  --border: #dddbd4;
+  --bg: #f5f4f0;
+  --bg-card: #ffffff;
+  --ink: #111110;
+  --ink-mid: #4a4947;
+  --ink-light: #8a8878;
+  --gold: #c9a530;
+  --gold-bg: #fdf5da;
+  --gold-dark: #8a6c0a;
+  --border: #e5e2d8;
+  --border-strong: #c8c4b8;
+  --tag-bg: #eeece6;
 
+  --sans: 'Manrope', sans-serif;
   --serif: 'Playfair Display', Georgia, serif;
-  --sans: 'IBM Plex Sans', sans-serif;
   --mono: 'IBM Plex Mono', monospace;
 
   --max-w: 1100px;
   --px: 40px;
+  --radius: 12px;
+  --radius-pill: 100px;
 }
 
 *, *::before, *::after {
@@ -34,9 +35,9 @@ html {
 body {
   font-family: var(--sans);
   color: var(--ink);
-  background: var(--paper);
-  line-height: 1.7;
-  font-weight: 300;
+  background: var(--bg);
+  line-height: 1.6;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -58,7 +59,5 @@ img {
 }
 
 @media (max-width: 768px) {
-  :root {
-    --px: 20px;
-  }
+  :root { --px: 20px; }
 }

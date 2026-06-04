@@ -1,5 +1,5 @@
 .forwhom {
-  background: var(--paper-warm);
+  background: var(--bg);
   padding: 80px 0;
 }
 
@@ -12,9 +12,9 @@
 .section-header {
   display: flex;
   align-items: baseline;
-  gap: 20px;
-  margin-bottom: 28px;
-  padding-bottom: 16px;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -24,57 +24,69 @@
   color: var(--gold);
   letter-spacing: 0.1em;
   flex-shrink: 0;
+  font-weight: 500;
 }
 
 .section-title {
-  font-family: var(--serif);
-  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-  font-weight: 400;
+  font-family: var(--sans);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
   color: var(--ink);
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .forwhom-lead {
   font-size: 16px;
   color: var(--ink-mid);
-  margin-bottom: 48px;
-  font-style: italic;
-  font-family: var(--serif);
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 620px;
 }
 
 .forwhom-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  background: var(--border);
-  border: 1px solid var(--border);
+  gap: 16px;
+}
+
+.forwhom-grid--6 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .forwhom-card {
-  background: var(--paper-warm);
-  padding: 32px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.forwhom-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
 }
 
 .forwhom-icon {
   font-size: 22px;
-  color: var(--accent);
   line-height: 1;
 }
 
 .forwhom-card-title {
-  font-family: var(--serif);
-  font-size: 20px;
-  font-weight: 400;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   color: var(--ink);
+  line-height: 1.3;
 }
 
 .forwhom-card-desc {
   font-size: 14px;
   color: var(--ink-mid);
-  line-height: 1.65;
+  line-height: 1.6;
   flex: 1;
 }
 
@@ -82,22 +94,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .forwhom-tag {
   font-size: 11px;
   font-family: var(--mono);
-  padding: 3px 10px;
-  border: 1px solid var(--border);
-  color: var(--ink-light);
-  background: var(--paper);
-  border-radius: 2px;
+  font-weight: 500;
+  padding: 4px 10px;
+  background: var(--tag-bg);
+  color: var(--ink-mid);
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 768px) {
-  .forwhom-grid {
-    grid-template-columns: 1fr;
-  }
+  .forwhom-grid,
+  .forwhom-grid--6 { grid-template-columns: 1fr; }
   .forwhom { padding: 56px 0; }
 }

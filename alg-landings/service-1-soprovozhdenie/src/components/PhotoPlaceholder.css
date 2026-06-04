@@ -1,6 +1,7 @@
 .photo-placeholder {
-  background: var(--paper-warm);
-  border: 2px dashed var(--border);
+  background: var(--bg);
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +9,6 @@
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 0.04em;
-  border-radius: 2px;
   min-height: 220px;
   width: 100%;
   text-align: center;

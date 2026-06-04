@@ -1,5 +1,5 @@
 .ctablock {
-  background: var(--accent);
+  background: var(--ink);
   padding: 80px 0;
 }
 
@@ -8,62 +8,71 @@
   margin: 0 auto;
   padding: 0 var(--px);
   display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: 60px;
-  align-items: center;
+  grid-template-columns: 1fr 320px;
+  gap: 64px;
+  align-items: start;
 }
 
 .ctablock-label {
-  display: block;
+  display: inline-block;
   font-family: var(--mono);
   font-size: 11px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.07);
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
   margin-bottom: 20px;
 }
 
 .ctablock-title {
-  font-family: var(--serif);
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-  font-weight: 400;
+  font-family: var(--sans);
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
   color: #fff;
-  line-height: 1.15;
-  margin-bottom: 20px;
+  line-height: 1.1;
+  margin-bottom: 16px;
 }
+
 .ctablock-title em {
   font-style: italic;
+  font-family: var(--serif);
   color: var(--gold);
+  font-weight: 700;
 }
 
 .ctablock-sub {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.65);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
   line-height: 1.65;
   margin-bottom: 36px;
-  max-width: 500px;
+  max-width: 480px;
 }
 
 .ctablock-actions {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .ctablock-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   background: var(--gold);
   color: var(--ink);
   border: none;
   padding: 16px 36px;
-  font-size: 15px;
-  font-weight: 500;
+  border-radius: var(--radius-pill);
   font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 800;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: background 0.2s, transform 0.15s;
   align-self: flex-start;
 }
-.ctablock-btn:hover { opacity: 0.85; }
+.ctablock-btn:hover { background: #dbb840; transform: translateY(-1px); }
 
 .ctablock-contacts {
   display: flex;
@@ -73,47 +82,51 @@
 
 .ctablock-contact {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
-  text-decoration: none;
+  align-items: center;
+  gap: 10px;
   font-size: 14px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.65);
   transition: color 0.2s;
 }
-.ctablock-contact:hover { color: var(--gold); }
+.ctablock-contact:hover { color: #fff; }
 
 .ctablock-contact-label {
   font-family: var(--mono);
   font-size: 10px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.35);
+  min-width: 50px;
 }
 
 .ctablock-aside {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 32px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .ctablock-promise {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .ctablock-promise-item {
   display: flex;
   gap: 14px;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.75);
-  align-items: baseline;
-  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+  align-items: flex-start;
+  line-height: 1.45;
 }
+.ctablock-promise-item:last-child { border-bottom: none; }
 
 .ctablock-promise-icon {
   color: var(--gold);
   font-family: var(--mono);
   flex-shrink: 0;
+  line-height: 1.45;
 }
 
 @media (max-width: 900px) {
@@ -122,5 +135,5 @@
 }
 
 @media (max-width: 600px) {
-  .ctablock-btn { width: 100%; text-align: center; padding: 16px 20px; }
+  .ctablock-btn { width: 100%; justify-content: center; }
 }
