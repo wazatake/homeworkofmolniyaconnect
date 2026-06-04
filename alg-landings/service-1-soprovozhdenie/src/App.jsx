@@ -11,7 +11,6 @@ import ForWhom from './sections/ForWhom';
 import Deliverables from './sections/Deliverables';
 import Benefits from './sections/Benefits';
 import Case from './sections/Case';
-import Packages from './sections/Packages';
 import FAQ from './sections/FAQ';
 import CTABlock from './sections/CTABlock';
 
@@ -30,7 +29,6 @@ export default function App() {
         <Deliverables />
         <Benefits />
         <Case onBook={openModal} />
-        <Packages onBook={openModal} />
         <FAQ />
         <CTABlock onBook={openModal} />
       </main>

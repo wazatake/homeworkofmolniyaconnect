@@ -11,7 +11,6 @@ import ForWhom from './sections/ForWhom';
 import WhatWeCheck from './sections/WhatWeCheck';
 import Process from './sections/Process';
 import Case from './sections/Case';
-import Packages from './sections/Packages';
 import FAQ from './sections/FAQ';
 import CTABlock from './sections/CTABlock';
 
@@ -30,7 +29,6 @@ export default function App() {
         <WhatWeCheck />
         <Process />
         <Case onBook={openModal} />
-        <Packages onBook={openModal} />
         <FAQ />
         <CTABlock onBook={openModal} />
       </main>
