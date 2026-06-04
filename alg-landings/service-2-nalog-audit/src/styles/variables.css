@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap');
+
+:root {
+  --ink: #1a1a18;
+  --ink-mid: #4a4a44;
+  --ink-light: #8a8a80;
+  --paper: #faf9f6;
+  --paper-warm: #f3f1eb;
+  --accent: #2a4a3e;
+  --accent-light: #e8f0ed;
+  --gold: #b08d57;
+  --gold-light: #f5eed8;
+  --border: #dddbd4;
+
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'IBM Plex Sans', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+
+  --max-w: 1100px;
+  --px: 40px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.7;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--sans);
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --px: 20px;
+  }
+}
