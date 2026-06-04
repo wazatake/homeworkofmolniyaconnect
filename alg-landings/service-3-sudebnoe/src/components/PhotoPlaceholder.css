@@ -1,0 +1,16 @@
+.photo-placeholder {
+  background: var(--paper-warm);
+  border: 2px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-light);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  min-height: 220px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
