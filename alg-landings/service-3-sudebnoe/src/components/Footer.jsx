@@ -24,10 +24,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer-links">
-            <a href="ЗАМЕНИТЬ_НА_РЕАЛЬНЫЙ_URL" target="_blank" rel="noopener noreferrer" className="footer-link">
-              Основной сайт →
-            </a>
-            <a href="ЗАМЕНИТЬ_НА_ССЫЛКУ_ЯНДЕКС_КАРТЫ" target="_blank" rel="noopener noreferrer" className="footer-link">
+            <a href="https://yandex.ru/maps/org/yurist_dlya_biznesa/146090133130?si=egxqc8gf1tcy07wbz65zqvkga0" target="_blank" rel="noopener noreferrer" className="footer-link">
               Мы на Яндекс.Картах →
             </a>
           </div>
